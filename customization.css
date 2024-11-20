@@ -1,0 +1,288 @@
+/* Default theme */
+:root {
+  --brand-color-ae: #0b1c30;
+  --brand-color-pr: #d9dfe1;
+  --brand-color-cz-65: rgba(217, 223, 225, 0.65);
+  --brand-color-ac: #69a6ff;
+  --brand-color-branco: #fffffF;
+  --default-radius: 0.2rem;
+
+  --e-global-color-primary: #0B1C30;
+  --e-global-color-secondary: #69A6FF;
+  --e-global-color-text: #061323;
+  --e-global-color-accent: #D9DFE1;
+  --e-global-color-f003642: #FFFFFF;
+  --e-global-color-5719338: #000000;
+  --e-global-typography-primary-font-family: "Ubuntu";
+  --e-global-typography-primary-font-size: 28px;
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Ubuntu";
+  --e-global-typography-secondary-font-size: 22px;
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Inter";
+  --e-global-typography-text-font-size: 16px;
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-accent-font-family: "Inter";
+  --e-global-typography-accent-font-size: 14px;
+  --e-global-typography-accent-font-weight: 500;
+}
+
+body {
+  font-family: "Inter", hero;
+  background-color: var(--brand-color-pr);
+}
+
+span {
+  color: var(--e-global-color-text);
+}
+
+@media (min-width: 992px) {
+  header {
+    height: 7rem;
+  }
+
+  header .logo {
+    height: 7rem;
+  }
+
+  /* Esconde menu hamburguer */
+  i.fa.fa-reorder {
+    display: none;
+  }
+
+  header.header-digital div.header-container {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+}
+
+.first-line {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.price {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a.with-link {
+  font-family: "Inter", hero;
+  font-size: 14px;
+  font-style: normal;
+}
+
+a.card-with-buttons.borderHover:hover {
+  border-color: var(--brand-color-ac);
+  color: inherit;
+}
+
+/* Cabeçalho */
+header.header-filledwithborder{
+  background-color: var(--brand-color-ae);
+  border-top: solid 2px var(--brand-color-pr);
+  border-bottom: solid 2px var(--brand-color-pr);
+}
+
+a.whatsapp-link-number {
+  color: var(--brand-color-branco);
+}
+
+a.with-link {
+  color: var(--brand-color-branco);
+}
+
+a i.fa-reorder {
+  background-color: var(--brand-color-pr);
+}
+
+/* Cabeçalho Interno */
+header.header-internal-digital {
+  background-color: var(--brand-color-ae);
+  border-top: solid 2px var(--brand-color-pr);
+  border-bottom: solid 2px var(--brand-color-pr);
+}
+
+/* Form Busca */
+@media screen and (min-width: 999px) {
+  section.digital-search form.digital-search__form {
+    background-color: var(--brand-color-pr);
+    border-radius: var(--default-radius);
+  }
+
+  section.digital-search form.digital-search__form fieldset.digital-search__main-filters {
+    background-color: var(--brand-color-pr);
+    border-radius: var(--default-radius);
+  }
+}
+
+button.btn.btn-success.digital-search__cta {
+  border-color: var(--brand-color-ae);
+  background-color: var(--brand-color-ae);
+  border-radius: var(--default-radius);
+}
+
+button.btn.btn-success.digital-search__cta:hover {
+  border-color: var(--brand-color-ac);
+  background-color: var(--brand-color-ae);
+  color: var(--brand-color-ac);
+}
+
+div.kdls-tag.digital-search__more {
+  border-color: var(--brand-color-ae);
+}
+
+ul.digital-search__links-list li {
+  background-color: var(--brand-color-cz-65);
+  border-radius: var(--default-radius);
+}
+
+section.digital-search div.container_buttons a.btn_code {
+  background-color: var(--brand-color-cz-65);
+  border-radius: var(--default-radius);
+}
+
+form.digital-search__form label.digital-search__field {
+  border-radius: var(--default-radius);
+}
+
+form.digital-search__form label.digital-search__field div.kdls-select__container {
+  border-radius: var(--default-radius);
+}
+
+form.digital-search__form div.digital-search__autocomplete {
+  border-radius: var(--default-radius);
+}
+
+div.kdls-tag.digital-search__more {
+  border-radius: var(--default-radius);
+}
+
+button.showcase_nav__button.showcase_nav__button--active {
+  border-radius: var(--default-radius);
+}
+
+/* cards */
+a.card_simple_small {
+  background-color: var(--brand-color-pr);
+}
+
+div.showcase_tab a.card_background_full {
+  border-radius: var(--default-radius);
+}
+
+a.card-with-buttons {
+  color: #0b1c30;
+}
+
+div.digital-result a.card-with-buttons {
+  background-color: var(--brand-color-branco);
+}
+
+div.owl-item a.card-without-buttons {
+  background-color: var(--brand-color-branco);
+  min-height: 34rem;
+}
+
+a.card-with-buttons.borderHover,button.btn btn-md btn-primary.btn-next{
+  border-radius: var(--default-radius);
+}
+
+/* card endereco */
+div.contain-address {
+  background-color: var(--brand-color-pr);
+  color: var(--brand-color-branco);
+}
+
+div.contain-address address {
+  background-color: var(--brand-color-ae);
+  color: var(--brand-color-branco);
+}
+
+div.cont-infos {
+  color: var(--brand-color-branco);
+}
+
+footer .contain-address address .cont-infos {
+  border-color: var(--brand-color-ae);
+}
+
+footer div.contain-address address strong.broker-license {
+  color: var(--brand-color-branco);
+}
+
+a.btn-map.btn-map-link {
+  color: var(--brand-color-branco);
+}
+
+/*rodape*/
+footer.footer-dark {
+  background-color: var(--brand-color-pr);
+}
+
+footer.footer-dark div.section-office {
+  background-color: var(--brand-color-pr);
+}
+
+footer.footer-dark address {
+  background-color: var(--brand-color-pr);
+  border-color: var(--brand-color-ae);
+}
+
+footer.footer-dark address div.cont-infos {
+  border-color: var(--brand-color-ae);
+  color: var(--brand-color-pr);
+}
+
+div.box-newsletter button.subscribe-button {
+  background-color: var(--brand-color-ae);
+  color: var(--brand-color-pr);
+}
+
+div.contain-sitemap {
+  background-color: var(--brand-color-ae);
+}
+
+div.signature {
+  display: none;
+}
+
+/*
+  Página de Detalhes
+  */
+div.page-detail-digital div.cont-title {
+  padding-top: 50px;
+}
+
+button.btn-success:hover {
+  border-color: var(--brand-color-ac);
+  background-color: var(--brand-color-ae);
+  color: var(--brand-color-ac);
+}
+
+.page-detail-digital .listing-info h2::before,
+.page-detail-digital .table-area h2::before,
+.page-detail-digital .map-listing .map-title h2::before {
+  background-color: var(--brand-color-ae);
+}
+
+div.box-description {
+  text-align: justify;
+}
+
+/*
+ Esconder DIVs  
+ */
+div.box-follow-us,
+div.info-office,
+div.contain-address {
+  display: none;
+}
